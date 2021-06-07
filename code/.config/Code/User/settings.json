@@ -39,7 +39,6 @@
     "editor.formatOnPaste": true,
     "editor.formatOnType": true,
     "C_Cpp.clang_format_sortIncludes": false,
-    "window.zoomLevel": 1,
     "window.titleBarStyle": "custom",
     "editor.cursorBlinking": "expand",
     "editor.cursorSmoothCaretAnimation": true,
@@ -69,5 +68,6 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "zenMode.hideLineNumbers": false,
     "zenMode.hideStatusBar": false,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "window.zoomLevel": 1
 }
