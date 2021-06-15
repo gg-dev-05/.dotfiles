@@ -6,10 +6,17 @@
 		"when": "editorTextFocus"
 	},
 	{
+		"key": "ctrl+alt+m",
+		"command": "workbench.action.terminal.sendSequence",
+		"args": {
+			"text": "./run.sh\u000D",
+		}
+	},
+	{
 		"key": "ctrl+alt+n",
 		"command": "workbench.action.terminal.sendSequence",
 		"args": {
-			"text": "g++ main.cpp -o main\u000D./main\u000Drm main\u000D"
+			"text": "g++ main.cpp -o main\u000D./main\u000Drm main\u000D",
 		}
 	}
 ]

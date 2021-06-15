@@ -5,12 +5,9 @@
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
     },
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
     "typescript.updateImportsOnFileMove.enabled": "always",
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.codeActionsOnSave": {
@@ -30,6 +27,9 @@
         "editor.defaultFormatter": "ms-vscode.cpptools",
         "editor.semanticHighlighting.enabled": true,
         "editor.formatOnSave": true
+    },
+    "[plaintext]": {
+        "editor.quickSuggestions": false
     },
     "editor.formatOnSave": true,
     "editor.insertSpaces": false,
@@ -64,10 +64,18 @@
     "vscode-neovim.useWSL": true,
     "workbench.iconTheme": "vscode-icons",
     "vsicons.dontShowNewVersionMessage": true,
-    "workbench.colorTheme": "Dracula Soft",
     "editor.multiCursorModifier": "ctrlCmd",
     "zenMode.hideLineNumbers": false,
     "zenMode.hideStatusBar": false,
     "git.autofetch": true,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "editor.tabSize": 8,
+    "editor.cursorStyle": "line",
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "files.associations": {
+        "*.txt": "plaintext"
+    },
+    "workbench.colorTheme": "GitHub Dark"
 }
