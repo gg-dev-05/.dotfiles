@@ -1,3 +1,5 @@
 [user]
 	email = garvitgalgat@gmail.com
 	name = gg-dev-05
+[oh-my-zsh]
+	hide-status = 1

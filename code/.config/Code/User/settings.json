@@ -6,7 +6,7 @@
         "javascript": "javascriptreact"
     },
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter-notebook"
     },
     "typescript.updateImportsOnFileMove.enabled": "always",
     "diffEditor.ignoreTrimWhitespace": false,
@@ -15,6 +15,7 @@
         "source.fixAll.eslint": true
     },
     "[c]": {
+        "editor.tabSize": 4,
         "editor.wordBasedSuggestions": false,
         "editor.suggest.insertMode": "replace",
         "editor.defaultFormatter": "ms-vscode.cpptools",
@@ -47,13 +48,16 @@
     "debug.allowBreakpointsEverywhere": true,
     "git.autorefresh": false,
     "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
+        "**/.classpath": true,
         "**/.DS_Store": true,
-        "**/node_modules": true,
-        "**/.firebase": true
+        "**/.factorypath": true,
+        "**/.firebase": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.svn": true,
+        "**/CVS": true
     },
     "files.watcherExclude": {
         "**/.git/objects/**": true,
@@ -68,8 +72,7 @@
     "zenMode.hideLineNumbers": false,
     "zenMode.hideStatusBar": false,
     "git.autofetch": true,
-    "window.zoomLevel": 1,
-    "editor.tabSize": 8,
+    "window.zoomLevel": 2,
     "editor.cursorStyle": "line",
     "editor.lineNumbers": "on",
     "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
@@ -77,5 +80,22 @@
     "files.associations": {
         "*.txt": "plaintext"
     },
-    "workbench.colorTheme": "GitHub Dark"
+    "workbench.colorTheme": "GitHub Dark",
+    "workbench.editor.centeredLayoutAutoResize": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "liveServer.settings.donotVerifyTags": true,
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced"
+    },
+    "python.formatting.provider": "yapf",
+    "omnisharp.useGlobalMono": "always"
 }
