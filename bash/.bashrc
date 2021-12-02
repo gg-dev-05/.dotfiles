@@ -61,6 +61,12 @@ if [ "$color_prompt" = yes ]; then
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
+
+#if [ "$color_prompt" = yes ]; then
+#   # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+#else
+#   # PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+#fi
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
@@ -87,11 +93,42 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
+# some aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias coder='notify-send --hint=int:transient:1 "Starting Up";cd;cd CP;code .;notify-send --hint=int:transient:1 "I am ready for coding !!";exit;'
+alias qq='exit'
+alias cxcx='clear'
+alias coe='code .;exit'
+# compiling and running c programs
+# scripts are updated according to zsh
+# alias runcc='~/scripts/./cc.sh '
+# alias runmpi='~/scripts/./mpi.sh'
+
+# For coding
+coder(){
+	notify-send --hint=int:transient:1 "Starting Up"
+	cd ~/CP
+	code .
+	notify-send --hint=int:transient:1 "I am ready for coding!!"
+	exit;
+}
+
+# For parallel programming
+coderP(){
+	notify-send --hint=int:transient:1 "Starting Up"
+	cd ~/PC
+	code .
+	notify-send --hint=int:transient:1 "Wut is UP?"
+	exit;
+}
+
+# For opening mars
+mars(){
+	cd ~/asm
+	java -jar Mars.jar &
+	exit
+}
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -116,4 +153,13 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+# For Autocomplete in bash
 bind TAB:menu-complete
+
+# For Vim Keybindings
+set -o vi
+set editing-mode vi
+set keymap vi
+set show-mode-in-prompt on
+set vi-ins-mode-string "+"
+set vi-cmd-mode-string ":"
