@@ -78,6 +78,7 @@
     "files.associations": {
         "*.txt": "plaintext"
     },
+    "workbench.colorTheme": "GitHub Dark",
     "workbench.editor.centeredLayoutAutoResize": false,
     "notebook.cellToolbarLocation": {
         "default": "right",
@@ -94,8 +95,4 @@
         "editor.autoIndent": "advanced"
     },
     "python.formatting.provider": "yapf",
-    "omnisharp.useGlobalMono": "always",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "git.confirmSync": false,
-    "workbench.colorTheme": "GitHub Dark"
 }
