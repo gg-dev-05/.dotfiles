@@ -16,8 +16,8 @@ export ZSH="/home/ggdv05/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 ZSH_THEME="powerlevel10k/powerlevel10k"
-# ZSH_THEME="bira"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -33,7 +33,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
 # DISABLE_UPDATE_PROMPT="true"
@@ -115,31 +115,19 @@ source $ZSH/oh-my-zsh.sh
 alias qq="exit"
 alias coe="code .;exit"
 alias runc="~/scripts/./code.sh"
-alias runmpi="~/scripts/./mpi.sh"
+alias ..="cd ..;ls"
 
-# For coding
-coder(){
-	notify-send --hint=int:transient:1 "Starting Up"
-	cd ~/CP
-	code .
-	notify-send --hint=int:transient:1 "I am ready for coding!!"
-	exit;
+alias byebye="sudo /etc/init.d/gdm3 stop"
+alias hihi="sudo /etc/init.d/gdm3 start" 
+
+function cd {
+    builtin cd "$@" && ls -F
 }
 
-# For parallel programming
-coderP(){
-	notify-send --hint=int:transient:1 "Starting Up"
-	cd ~/PC
-	code .
-	notify-send --hint=int:transient:1 "Wut is UP?"
-	exit;
-}
-
-# For opening mars
-mars(){
-	cd ~/asm
-	java -jar Mars.jar &
-	exit
+function show(){
+	${@} > /tmp/temp;
+	vim /tmp/temp;
+	rm /tmp/temp;
 }
 # ******************************************************
 
@@ -148,6 +136,9 @@ set -o vi
 
 # right arrow key = ctrl + space
 bindkey "^@" forward-word
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
