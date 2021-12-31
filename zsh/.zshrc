@@ -112,10 +112,15 @@ source $ZSH/oh-my-zsh.sh
 
 
 # ************** ALIASES AND FUNCTIONS **************
+
+# https://www.youtube.com/watch?v=eamEZCj-CuQ
+alias sudo="doas"
+
 alias qq="exit"
 alias coe="code .;exit"
 alias runc="~/scripts/./code.sh"
 alias ..="cd ..;ls"
+alias pdf="evince"
 
 alias byebye="sudo /etc/init.d/gdm3 stop"
 alias hihi="sudo /etc/init.d/gdm3 start" 
@@ -128,6 +133,11 @@ function show(){
 	${@} > /tmp/temp;
 	vim /tmp/temp;
 	rm /tmp/temp;
+}
+
+function note(){
+	fileName=$(basename "$PWD")_$(date '+%Y-%a-%d|%H:%M')
+	vim $fileName
 }
 # ******************************************************
 
