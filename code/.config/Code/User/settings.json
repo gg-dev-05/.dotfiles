@@ -1,98 +1,108 @@
 {
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "explorer.confirmDragAndDrop": false,
-    "git.enableSmartCommit": true,
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "editor.codeActionsOnSave": {
-        "source.fixAll": true,
-        "source.fixAll.eslint": true
-    },
-    "[c]": {
-        "editor.tabSize": 4,
-        "editor.wordBasedSuggestions": false,
-        "editor.suggest.insertMode": "replace",
-        "editor.defaultFormatter": "ms-vscode.cpptools",
-        "editor.semanticHighlighting.enabled": true,
-        "editor.formatOnSave": true
-    },
-    "[cpp]": {
-        "editor.wordBasedSuggestions": false,
-        "editor.suggest.insertMode": "replace",
-        "editor.defaultFormatter": "ms-vscode.cpptools",
-        "editor.semanticHighlighting.enabled": true,
-        "editor.formatOnSave": true
-    },
-    "[plaintext]": {
-        "editor.quickSuggestions": false
-    },
-    "editor.formatOnSave": true,
-    "editor.insertSpaces": false,
-    "editor.largeFileOptimizations": false,
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
-    "C_Cpp.updateChannel": "Insiders",
-    "editor.formatOnPaste": true,
-    "editor.formatOnType": true,
-    "C_Cpp.clang_format_sortIncludes": false,
-    "window.titleBarStyle": "custom",
-    "editor.cursorBlinking": "expand",
-    "editor.cursorSmoothCaretAnimation": true,
-    "editor.fontLigatures": true,
-    "terminal.integrated.tabs.enabled": true,
-    "debug.allowBreakpointsEverywhere": true,
-    "git.autorefresh": false,
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.DS_Store": true,
-        "**/.factorypath": true,
-        "**/.firebase": true,
-        "**/.git": true,
-        "**/.hg": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.svn": true,
-        "**/CVS": true
-    },
-    "files.watcherExclude": {
-        "**/.git/objects/**": true,
-        "**/.git/subtree-cache/**": true,
-        "**/node_modules/**": true
-    },
-    "vscode-neovim.neovimExecutablePaths.linux": "/snap/bin/nvim",
-    "vscode-neovim.useWSL": true,
-    "workbench.iconTheme": "vscode-icons",
-    "vsicons.dontShowNewVersionMessage": true,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "zenMode.hideLineNumbers": false,
-    "zenMode.hideStatusBar": false,
-    "git.autofetch": true,
-    "window.zoomLevel": 2,
-    "editor.cursorStyle": "line",
-    "editor.lineNumbers": "on",
-    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-    "files.associations": {
-        "*.txt": "plaintext"
-    },
-    "workbench.colorTheme": "GitHub Dark",
-    "workbench.editor.centeredLayoutAutoResize": false,
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "liveServer.settings.donotShowInfoMsg": true,
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "liveServer.settings.donotVerifyTags": true,
-    "[dockercompose]": {
-        "editor.insertSpaces": true,
-        "editor.tabSize": 2,
-        "editor.autoIndent": "advanced"
-    },
-    "python.formatting.provider": "yapf",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "git.enableSmartCommit": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  "[c]": {
+    "editor.tabSize": 4,
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.formatOnSave": true
+  },
+  "[cpp]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.formatOnSave": true
+  },
+  "[plaintext]": {
+    "editor.quickSuggestions": false
+  },
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.largeFileOptimizations": false,
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "C_Cpp.clang_format_sortIncludes": false,
+  "window.titleBarStyle": "custom",
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.fontLigatures": true,
+  "terminal.integrated.tabs.enabled": true,
+  "debug.allowBreakpointsEverywhere": true,
+  "git.autorefresh": false,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.DS_Store": true,
+    "**/.factorypath": true,
+    "**/.firebase": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.svn": true,
+    "**/CVS": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true
+  },
+  "vscode-neovim.neovimExecutablePaths.linux": "/snap/bin/nvim",
+  "vscode-neovim.useWSL": true,
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "git.autofetch": true,
+  "editor.cursorStyle": "line",
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "files.associations": {
+    "*.txt": "plaintext"
+  },
+  "workbench.editor.centeredLayoutAutoResize": false,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.donotVerifyTags": true,
+  "python.formatting.provider": "black",
+  "workbench.editor.restoreViewState": false,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "prolog.executablePath": "/usr/bin/gprolog",
+  "workbench.startupEditor": "none",
+  "C_Cpp.default.includePath": ["C:/MinGW/bin"],
+  "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+  "git.confirmSync": false,
+  "editor.tabSize": 2,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "notebook.lineNumbers": "on",
+  "window.zoomLevel": 2,
+  "window.menuBarVisibility": "toggle",
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.smoothScrolling": true,
+  "workbench.colorTheme": "GitHub Dark"
 }

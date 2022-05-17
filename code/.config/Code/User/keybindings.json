@@ -18,5 +18,15 @@
 		"args": {
 			"text": "g++ main.cpp -o main\u000D./main\u000Drm main\u000D",
 		}
+	},
+	{
+		"key": "ctrl+;",
+		"command": "editor.action.marker.nextInFiles",
+		"when": "editorFocus"
+	},
+	{
+		"key": "f8",
+		"command": "-editor.action.marker.nextInFiles",
+		"when": "editorFocus"
 	}
 ]

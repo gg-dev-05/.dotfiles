@@ -114,16 +114,36 @@ source $ZSH/oh-my-zsh.sh
 # ************** ALIASES AND FUNCTIONS **************
 
 # https://www.youtube.com/watch?v=eamEZCj-CuQ
-alias sudo="doas"
+# alias sudo="doas"
 
 alias qq="exit"
 alias coe="code .;exit"
 alias runc="~/scripts/./code.sh"
 alias ..="cd ..;ls"
 alias pdf="evince"
+alias gt="gnome-terminal"
+alias gc="git clone"
+alias oopengl="bash; cd ~/sem6/computer_graphics/examples/fun"
 
 alias byebye="sudo /etc/init.d/gdm3 stop"
 alias hihi="sudo /etc/init.d/gdm3 start" 
+
+function opengl {
+    runc -f "$@" -l lGLU -l lGL -l lglut 
+}
+
+function openglTextures {
+	if [ ! -f "imageio.o" ]
+	then
+		echo "g++ -c imageio.cpp -ltiff -lpng;"
+		g++ -c imageio.cpp -ltiff -lpng;
+	fi
+	echo "g++ "$@" -o openglTexture -lglut -lGLU -lGL imageio.o -ltiff -lpng"
+	g++ "$@" -o openglTexture -lglut -lGLU -lGL imageio.o -ltiff -lpng
+
+	./openglTexture;
+	rm openglTexture;
+}
 
 function cd {
     builtin cd "$@" && ls -F
@@ -152,3 +172,6 @@ bindkey "^@" forward-word
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export PNPM_HOME="/home/ggdv05/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
